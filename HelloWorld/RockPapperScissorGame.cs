@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Numerics;
+using System.Text.RegularExpressions;
 
 public class RockPapperScissorGame
 {
@@ -12,7 +13,7 @@ public class RockPapperScissorGame
 	{
 		char IsDone = 'Y'; bool IsLose = false, IsDraw = false, IsWin = false; Random Random = new(); string? PlayerOption, ComputerOption;
 
-		while (IsDone == 'Y') {
+		while (IsDone != 'N') {
 			Console.Clear();
 			Console.WriteLine("--------------------------------------------------");
 			Console.WriteLine("=== SELAMAT DATANG DI GAME BATU GUNTING KERTAS ===");
