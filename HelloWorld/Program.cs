@@ -19,6 +19,26 @@ namespace HelloWorld
             //Authenticate.run();
 
             //Program.Calculate(10, 15, 15);
+
+            //string[,] ArrayVegetables = new string[3, 3]
+            //{
+            //    {
+            //        "Jeruk", "Mangga", "Alpukat"
+            //    },
+            //    {
+            //        "Wortel", "Selada", "Terong"
+            //    },
+            //    {
+            //        "Daging Ayam", "Daging Sapi", "Daging Domba"
+            //    }
+            //};
+            //Program.MultidimesionalArrays(ArrayVegetables);
+
+            // Static is different i think in C#
+            Car Car1 = new("Mercedes");
+            Car Car2 = new("Nascar");
+
+            Console.WriteLine($"Jumlah mobil yang ada diarena balapan adalah: {Car.NumbersOfCars}");
         }
 
         // Learning how params keyword work in C# methods
@@ -31,6 +51,16 @@ namespace HelloWorld
             }
 
             Console.WriteLine($"Total is {Total}");
+        }
+
+        // Learning how multidimensional array work in C#
+        public static void MultidimesionalArrays(string[,] Arrays)
+        {
+            // Foreach 
+            foreach (string Food in Arrays)
+            {
+                Console.WriteLine($"The item is: '{Food}'");
+            }
         }
     }
 }
