@@ -35,10 +35,12 @@ namespace HelloWorld
             //Program.MultidimesionalArrays(ArrayVegetables);
 
             // Static is different i think in C#
-            Car Car1 = new("Mercedes");
-            Car Car2 = new("Nascar");
+            //Car Car1 = new("Mercedes");
+            //Car Car2 = new("Nascar");
 
-            Console.WriteLine($"Jumlah mobil yang ada diarena balapan adalah: {Car.NumbersOfCars}");
+            //Console.WriteLine($"Jumlah mobil yang ada diarena balapan adalah: {Car.NumbersOfCars}");
+
+
         }
 
         // Learning how params keyword work in C# methods
